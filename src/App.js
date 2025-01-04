@@ -6,6 +6,9 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
+  ReactDOM.render(<App />, document.getElementById('root'));
+
+
   async function fetchTransitData() {
     setLoading(true);
     setError(null);
@@ -36,3 +39,4 @@ function App() {
 }
 
 export default App;
+
